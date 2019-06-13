@@ -1,5 +1,5 @@
 pipeline {
-    agent label
+    agent {'Node1'}
     stages { 
         stage ('Compile Stage') {
 
