@@ -1,5 +1,7 @@
 pipeline {
     agent any
+    
+    stage{
     stage ('Compile Stage') {
 
             steps {
