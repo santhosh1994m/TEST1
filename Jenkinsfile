@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    stage('init') {
+      checkout scm
+   }
     stages { 
         stage ('Compile Stage') {
 
