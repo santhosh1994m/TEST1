@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    
-    stage{
-    stage ('Compile Stage') {
+
+    stages {
+        stage ('Compile Stage') {
 
             steps {
                 withMaven(maven : 'MAVEN_HOME') {
