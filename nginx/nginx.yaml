@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: octopus-deployment
   labels:
-    app: api
+    app: web
 spec:
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        app: api
+        app: web
         octopusexport: OctopusExport
     spec:
       containers:
